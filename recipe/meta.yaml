@@ -15,7 +15,8 @@ source:
   sha256: fab573abdc0dd44e8c8bc7242a1428df20b3ec64c4c194e5f1f907393f902d01
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -23,15 +24,15 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
     - r-base
     - r-mvtnorm
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
   run:
     - r-base
     - r-mvtnorm
-    - libgcc  # [not win]
 
 test:
   commands:
