@@ -3,6 +3,7 @@ About r-mhsmm-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mhsmm-feedstock/blob/main/LICENSE.txt)
 
+
 About r-mhsmm
 -------------
 
@@ -13,6 +14,7 @@ Package license: GPL-2.0-or-later
 Summary: Parameter estimation and prediction for hidden Markov and semi-Markov models for data
 with multiple observation sequences.  Suitable for equidistant time series data,
 with multivariate and/or missing data. Allows user defined emission distributions.
+
 
 About r-mhsmm
 -------------
