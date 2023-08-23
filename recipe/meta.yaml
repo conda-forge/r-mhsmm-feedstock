@@ -1,4 +1,4 @@
-{% set version = "0.4.16" %}
+{% set version = "0.4.21" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/mhsmm_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/mhsmm/mhsmm_{{ version }}.tar.gz
-  sha256: fab573abdc0dd44e8c8bc7242a1428df20b3ec64c4c194e5f1f907393f902d01
+  sha256: 293544afb194934b1d58cf88c6f8c372f537745514b6e428cf83ae62e87d2bba
 
 build:
   merge_build_host: true  # [win]
-  number: 1006
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
